@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@drawable/ss"
+    tools:context=".MenuActivity">
+
+
+    <TextView
+        android:id="@+id/Menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:text="Menu"
+
+        android:textColorHighlight="@color/purple_700"
+
+        android:textSize="50sp">
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/Enter"
+        android:background="#3BFFF8"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Click Your Mode"
+        android:textColorHighlight="@color/purple_700"
+        android:textSize="50sp">
+    </TextView>
+
+
+
+    <TextView
+        android:id="@+id/Name"
+        android:background="#34EE00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+
+        android:text="Name:Oriel Malik"
+        android:textSize="50sp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="32dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/game_BTN_yes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Buttons Mode"
+            android:textAllCaps="false" />
+        <View
+            android:layout_width="16dp"
+            android:layout_height="0dp"/>
+
+
+        <View
+            android:layout_width="16dp"
+            android:layout_height="0dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/game_BTN_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Fast Mode"
+            android:textAllCaps="false"/>
+        <View
+            android:layout_width="16dp"
+            android:layout_height="0dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/game_BTN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sensor Mode"
+            android:textAllCaps="false"/>
+
+
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/game_REC"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Record Mode"
+        android:textAllCaps="false"/>
+</RelativeLayout>
